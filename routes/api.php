@@ -21,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('data', [ProductionStateController::class, "index"]);
+Route::get('data/saw', [ProductionStateController::class, "extractPartialValues"]);
